@@ -1,10 +1,12 @@
 {
   "name": "abi-reader",
-  "version": "1.0.0",
-  "description": "ABI Reader is a cli that lets you operate with smart contracts artifacts",
+  "version": "0.0.1",
+  "description": "ABI Reader is a CLI that lets you operate with smart contracts artifacts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "node cli.js",
+    "lint": "eslint ./src"
   },
   "keywords": [
     "ethereum",
@@ -12,5 +14,17 @@
     "selector"
   ],
   "author": "Gonzalo L Petraglia",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": "cli.js",
+  "dependencies": {
+    "keccak256": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "7.12.0",
+    "eslint-plugin-mocha": "8.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "8.2.0",
+    "prettier": "2.1.2"
+  }
 }
