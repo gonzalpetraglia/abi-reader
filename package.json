@@ -1,0 +1,16 @@
+{
+  "name": "abi-reader",
+  "version": "1.0.0",
+  "description": "ABI Reader is a cli that lets you operate with smart contracts artifacts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "abi",
+    "selector"
+  ],
+  "author": "Gonzalo L Petraglia",
+  "license": "MIT"
+}
