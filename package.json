@@ -1,6 +1,6 @@
 {
   "name": "abi-reader",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "ABI Reader is a CLI that lets you operate with smart contracts artifacts",
   "main": "index.js",
   "scripts": {
