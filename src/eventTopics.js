@@ -6,12 +6,12 @@ const toSignature = ({ name, inputs }) => `${name}(${concatInputs(inputs)})`;
 
 const toPairSignatureSelector = (signature) => [
   signature,
-  keccak256(signature).toString("hex").slice(0, 8),
+  "0x" + keccak256(signature).toString("hex"),
 ];
 
-const isFunctionOrEvent = ({ type }) => "function" === type;
+const isFunctionOrEvent = ({ type }) => "event" === type;
 
-const selectors = async (artifact) => {
+const eventTopics = async (artifact) => {
   const { abi } = artifact;
 
   const functionSignatures = abi.filter(isFunctionOrEvent).map(toSignature);
@@ -22,4 +22,4 @@ const selectors = async (artifact) => {
   return functionSignaturesAndSelectors;
 };
 
-module.exports = selectors;
+module.exports = eventTopics;
