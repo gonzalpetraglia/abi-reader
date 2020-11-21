@@ -1,7 +1,7 @@
 {
-  "name": "abi-reader",
-  "version": "0.0.2",
-  "description": "ABI Reader is a CLI that lets you operate with smart contracts artifacts",
+  "name": "eth-debugging-toolbox",
+  "version": "2.0.0",
+  "description": "Eth Debugging Toolbox is a CLI that gives you some commands to ease the debugging of a smart contract in an ethereum-like network",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
