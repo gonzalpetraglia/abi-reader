@@ -18,7 +18,9 @@
   "license": "MIT",
   "bin": "cli.js",
   "dependencies": {
-    "keccak256": "1.0.1"
+    "axios": "0.21.0",
+    "keccak256": "1.0.1",
+    "lodash": "4.17.20"
   },
   "devDependencies": {
     "chai": "4.2.0",
